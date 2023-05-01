@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      
+        <div class="profile__card ">
+          <div class="report__container ">
+            <div class="avatar">
+              <img src="images/image-jeremy.png" alt="" class="" />
+            </div>
+            <span class="user__report">Report for <span class="user">Jeremy Robson</span></span>
+          </div>
+          <div class=" btn__container">
+            <button class="btn">daily</button>
+            <button class="btn">weekly</button>
+            <button class="btn">monthly</button>
+          </div>
+        </div>
+        <div class="item cards">
+          
+           <div class="img-icon__container">
+            <img src="images/icon-work.svg" alt="" class="schedule-img" />
+           </div>
+          
+          <div class="design">
+            <div>
+              <p class="title">Work</p>
+              <p  class="current__hrs"><span class="wk-current">32</span>hrs</p>
+              <p class="previous__hrs" >Last week - <span class="wk-previous">36</span>hrs</p>
+              
+            </div>
+            <div class="t">
+              <img src="images/icon-ellipsis.svg" alt="" class="ellipsis" />
+              <p class="previous__hrs mobile-p" >Last week - <span class="wk-previous">36</span>hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="item play">
+          
+         <div class="img-icon__container ">
+          <img src="images/icon-play.svg" alt="" class="schedule-img" />
+         </div>
+          
+          <div class="design">
+            <div>
+              <p class="title">Play</p>
+              <p class="current__hrs"><span class="pl-current">10</span>hrs</p>
+              <p class="previous__hrs " >Last Week - <span class="pl-previous">8</span>hrs</p>
+            </div>
+            <div>
+              <img src="images/icon-ellipsis.svg" alt="" class="ellipsis" />
+              <p class="previous__hrs mobile-p" >Last Week - <span class="pl-previous">8</span>hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="item Study">
+          
+            <div class="img-icon__container ">
+              <img src="images/icon-study.svg" alt="" class="schedule-img" />
+            </div>
+          
+          <div class="design">
+            <div>
+              <p class="title">Study</p>
+              <p class="current__hrs"><span class="st-current">4</span>hrs</p>
+              <p class="previous__hrs">Last Week - <span class="st-previous">7</span>hrs</p>
+            </div>
+            <div>
+              <img src="images/icon-ellipsis.svg" alt="" class="ellipsis" />
+              <p class="previous__hrs mobile-p">Last Week - <span class="st-previous">7</span>hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="item exercise">
+          
+           <div class="img-icon__container">
+            <img src="images/icon-exercise.svg" alt="" class="schedule-img" />
+           </div>
+          
+          <div class="design">
+            <div>
+              <p class="title">Exercise</p>
+              <p class="current__hrs"><span class="ex-current">4</span>hrs</p>
+              <p class="previous__hrs">Last Week - <span class="ex-previous">5</span>hrs</p>
+            </div>
+            <div>
+              <img src="images/icon-ellipsis.svg" alt="" class="ellipsis" />
+              <p class="previous__hrs mobile-p">Last Week - <span class="ex-previous">5</span>hrs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item social">
+          
+           <div class="img-icon__container">
+            <img src="images/icon-social.svg" alt="" class="schedule-img" />
+           </div>
+          
+          <div class="design">
+            <div>
+              <p class="title">Socials</p>
+              <p class="current__hrs"> <span class="so-current">5</span>hrs</p>
+              <p  class="previous__hrs">Last week - <span class="so-previous">10</span>hrs</p>
+            </div>
+            <div>
+              <img src="images/icon-ellipsis.svg" alt="" class="ellipsis" />
+              <p class="previous__hrs mobile-p">Last Week - <span class="so-previous">10</span>hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="item self-care">
+          
+           <div class="img-icon__container">
+            <img src="images/icon-self-care.svg" alt="" class="schedule-img" />
+           </div>
+          
+          <div class="design">
+            <div>
+              <p class="title">Self Care</p>
+              <p class="current__hrs"><span class="sc-current">2</span>hrs</p>
+              <p class="previous__hrs">Last Week - <span class="sc-previous">2</span>hrs</p>
+            </div>
+            <div>
+              <img src="images/icon-ellipsis.svg" alt="" class="ellipsis" />
+              <p class="previous__hrs mobile-p">Last Week - <span class="sc-previous">2</span>hrs</p>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+    
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Olaitan01">OLAITAN</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
