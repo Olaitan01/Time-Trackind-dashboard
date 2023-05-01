@@ -184,6 +184,7 @@ body {
     transform: translateY(-1em);
     align-self: flex-start;
     display: block;
+    max-width: 100%;
   }
   .t {
     justify-content: flex-start;
