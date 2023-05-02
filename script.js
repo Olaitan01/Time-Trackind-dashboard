@@ -13,6 +13,7 @@ const soP = document.querySelector(".so-previous");
 const sfC = document.querySelector(".sc-current");
 const sfP = document.querySelector(".sc-previous");
 
+/**Fetch data using XMLHTttpRequest */
 let data = new XMLHttpRequest();
 data.open("GET", "data.json", true);
 data.send();
@@ -25,13 +26,16 @@ data.onload = () => {
   }
 };
 
+/**The data retrieved from the object is passed into a function */
 function timelinePeriodicity() {
   const response = JSON.parse(data.response);
   let timeframes = response[0].timeframes;
 
+    /**The buttons looped in order to get the clicked button */
   btns.forEach((btn) => {
     btn.addEventListener("click", () => {
        
+        /**Display a particular time if it passess a condition */
       if(btn.innerText==="Daily") {
         wkC.innerText = response[0].timeframes.daily.current;
         wkP.innerText = response[0].timeframes.daily.previous;
@@ -78,28 +82,5 @@ function timelinePeriodicity() {
     });
   });
 
-  // let wrapper=document.createElement("div")
-  // wrapper.innerHTML=`<div>
-  // <div>
-  // <div><img src="images/image-jeremy.png"><div>
-  // </div>
-  // <div>
-  // <div>
-  // <p>${response[0].timeframes.daily.current}</p>
-  // <p>${response[0].timeframes.daily.previous}</p>
-  // <div>
-  // </div>
-  // <div
-  // <p>${response[1].timeframes.daily.current}</p>
-  // <P>${response[1].timeframes.daily.previous}</</p>
-  // <p><p>
-  // </div>
-  // <div></div>
-  // <div></div>
-  // <div></div>
-  // <div></div>
 
-  // <div>`
-
-  // container.appendChild(wrapper)
 }
