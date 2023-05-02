@@ -12,13 +12,14 @@ body {
   color: #ffffff;
   font-family: "Rubik", sans-serif;
  
+
 }
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-items: center;
-  margin: 10% auto;
+    margin: 20% auto;
   gap: 0.5em;
   width: 45%;
   max-width: 1000px;
